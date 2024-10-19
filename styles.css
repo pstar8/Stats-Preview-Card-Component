@@ -1,0 +1,176 @@
+/* Font Family - Lexend Deca */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+/* Font Family - Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    margin: 0;
+    /* filter: ; */
+}
+
+body {
+    font-family: 'Inter','Lexend Deca', sans-serif;
+    font-size: 15px;
+    background-color: hsl(233, 47%, 7%);
+}
+
+/* Common Styles */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main .container{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(244, 38%, 16%);
+    justify-content: center;
+}
+
+main h1{
+    font-family: 'Inter';
+    color: hsl(0, 0%, 100%);
+}
+
+main h1 span{
+    color: hsl(277, 64%, 61%);
+}
+
+main p{
+   color: hsla(0, 0%, 100%, 0.75);
+   line-height: 1.5rem;
+}
+
+main .stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .stats div{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    justify-content: center;
+}
+
+main .stats h2{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+main .stats p{
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+/* Mobile Design */
+
+@media screen and (max-width: 768px) {
+    .bg-header{
+        display: none;
+    }
+
+    body {
+        padding: 4rem 2rem;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    img{
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+    }
+    .container{
+        padding: 2rem 1.5rem;
+        gap: 2rem;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
+
+    main .container{
+        gap: 2rem;
+    }
+
+    main h1{
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
+    main p{
+        text-align: center;
+     }
+
+    main .stats {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    main .stats div{
+        align-items: center;
+    }
+}
+
+/* Desktop Design */
+
+@media screen and (min-width: 769px) {
+    .bg-mobile{
+        display: none ;
+    }
+    body {
+        padding: 8rem;
+    }
+
+    main {
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    
+    img{
+            border-bottom-right-radius:7px ;
+            border-top-right-radius:7px ;
+        }
+        
+    main .container{
+        padding: 3rem;
+        width: 100%;
+        gap: 3rem;
+        border-bottom-left-radius:7px ;
+        border-top-left-radius:7px ;
+    }
+
+    main h1{
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    main .paragraph{
+        text-align: left;
+        width: 350px;
+     }
+
+     main .stats {
+        width: 75%;
+        flex-direction: row;
+        margin-top: 1rem;
+        justify-content: space-between;
+     }
+
+     main .stats div{
+        align-items: flex-start;
+    }
+}
